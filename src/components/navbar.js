@@ -2,7 +2,6 @@ import { Navbar,Container,Nav } from "react-bootstrap";
 import { useState,useEffect } from "react";
 import logo from '../assets/img/logo.svg';
 import nav_bar_icon1 from "../assets/img/nav-icon1.svg";
-import nav_bar_icon2 from "../assets/img/nav-icon2.svg";
 import nav_bar_icon3 from "../assets/img/nav-icon3.svg";
 import React  from 'react';
 
@@ -24,6 +23,7 @@ export const NavBar=()=>{
         return () => window.removeEventListener("scroll",onScroll);
     },[])
 
+    // this function it's for move or switch pages
     const onUpdateLink = (value) => {
         setActiveLink(value);
     }
@@ -49,7 +49,6 @@ export const NavBar=()=>{
                     <span className="navbar-text">
                         <div className="social-icon">
                             <a href="#test"><img src={nav_bar_icon1} alt=""></img></a>
-                            {/* <a href="#test2"><img src={nav_bar_icon2} alt=""></img></a> */}
                             <a href="#test3"><img src={nav_bar_icon3} alt=""></img></a>
                         </div>
                         <button className="btn_vd" onClick={()=>console.log('connect')}><span>let's connect</span></button>
