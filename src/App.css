@@ -540,11 +540,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 0 0 0px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .newsletter-bx {
   background: #FFFFFF;
